@@ -23,7 +23,7 @@ public class Baker extends Thread {
 	}
 	public String getBread() {
 		String bread = null;
-		switch((int)(Math.random()*3)) {
+		switch((int)(Math.random()*3)) {//0~2 랜덤 숫자 출력
 		case 0:
 			bread = "생크림빵";
 			break;
@@ -34,7 +34,7 @@ public class Baker extends Thread {
 			bread = "카스테라";
 			break;
 		}
-		return bread;
+		return bread; 
 	}
 	
 	/*

@@ -119,7 +119,7 @@ public class TalkClient extends JFrame implements ActionListener {
 	public void init() {
 		try {//네트워크에서 하는건 예외처리
 			//서버측의 ip주소 작성하기
-			socket = new Socket("192.168.0.119", 3000);
+			socket = new Socket("192.168.0.119", 3001);
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			ois = new ObjectInputStream(socket.getInputStream());
 			//initDisplay에서 닉네임이 결정된 후 init메소드가 호출되므로

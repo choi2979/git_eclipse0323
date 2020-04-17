@@ -1,4 +1,4 @@
-package thread.emoticon;
+package solo;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -54,9 +54,7 @@ public class TalkServer extends Frame implements Runnable {
 						PrintWriter pw = new PrintWriter(
 								new BufferedWriter(//필터클래스 -카메라 필터 느낌
 										new FileWriter(f.getAbsolutePath())));
-					//File 객체를 생성할 때 넣어준 경로를 그대로 반환한다,프로그램을 실행시킨 위치 정보도 함께 반환해 준다.
-					//(D:\workspace\Test)src/test 
-						//io패키지에는 단독으로 파일을 컨트롤할 수 있는 클래스가 있고
+					//io패키지에는 단독으로 파일을 컨트롤할 수 있는 클래스가 있고
 					//그 클래스에 연결해서 사용하는 필터 클래스가 존재함.(기능을 향상시킴)
 						pw.write(jta_log.getText());
 						pw.close();//사용한 입출력 클래스는 반드시 닫아줌.
@@ -84,7 +82,7 @@ public class TalkServer extends Frame implements Runnable {
 		globalList = new Vector<TalkServerThread>();
 		boolean isStop = false;
 		try {
-			server = new ServerSocket(3001);
+			server = new ServerSocket(3000);
 			jta_log.append("Server Ready............\n");
 			while(!isStop) {
 				socket = server.accept();

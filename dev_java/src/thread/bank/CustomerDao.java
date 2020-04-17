@@ -6,7 +6,8 @@ import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.util.DBConnectionMgr;
+import thread.talk3.DBConnectionMgr;
+
 
 public class CustomerDao {
 	DBConnectionMgr dbMgr = DBConnectionMgr.getInstance();

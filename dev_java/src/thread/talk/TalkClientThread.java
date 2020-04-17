@@ -27,7 +27,7 @@ public class TalkClientThread extends Thread {
 				switch(protocol) {
 					case 100:{//100#apple
 						String nickName = st.nextToken();
-						tc.jta_display.append(nickName+"닝이 입장하였습니다.\n");
+						tc.jta_display.append(nickName+"님이 입장하였습니다.\n");
 						Vector<String> v = new Vector<String>();
 						v.add(nickName);
 						tc.dtm.addRow(v);

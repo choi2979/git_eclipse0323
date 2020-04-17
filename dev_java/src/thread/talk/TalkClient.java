@@ -90,8 +90,8 @@ public class TalkClient extends JFrame implements ActionListener {
 				
 			}
 		};
-		jta_display.setLineWrap(true);
-		jta_display.setOpaque(false);
+		jta_display.setLineWrap(true);//자동 줄바꿈
+		jta_display.setOpaque(false);//투명하게
 		Font font = new Font("돋움",Font.BOLD,25);
 		jta_display.setFont(font);
 		jsp_display = new JScrollPane(jta_display);
